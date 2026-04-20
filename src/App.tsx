@@ -46,7 +46,7 @@ export default function App() {
 - 格式严格按照 Markdown 输出，不要使用HTML标签，多使用粗体强调重点。`;
 
       const response = await ai.models.generateContentStream({
-        model: 'gemini-3.1-pro-preview',
+        model: 'gemini-3-flash-preview',
         contents: prompt,
         tools: [{ googleSearch: {} }]
       });
